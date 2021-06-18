@@ -3,7 +3,7 @@ html{
 	font-size: 16px;
 }
 body {
-	flex-basis: 100%;
+	flex-basis: 100px;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display: flex;
 	justify-content: center;
@@ -49,6 +49,7 @@ p {
 header {
 	display: flex;
 	justify-content: center;
+	flex-flow: row wrap;
 	align-items: center;
 	height: 110px;
 	border-bottom: 3px solid #77a466;
@@ -87,6 +88,7 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
+	flex-flow: row wrap;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -164,6 +166,7 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 	height: 50px;
