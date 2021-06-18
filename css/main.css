@@ -14,7 +14,7 @@ body {
 
 .container{
 	display: flex;
-	flex-flow: row wrap space-between;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 	max-width: 1200px;
