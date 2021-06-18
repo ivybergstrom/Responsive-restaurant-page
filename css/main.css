@@ -3,7 +3,7 @@ html{
 	font-size: 16px;
 }
 body {
-	flex-basis: 100px;
+	flex-basis: 300px;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display: flex;
 	justify-content: center;
@@ -14,6 +14,7 @@ body {
 
 .container{
 	display: flex;
+	flex-basis: 300px;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
@@ -48,6 +49,7 @@ p {
 /*The widths are in a percentage!*/
 header {
 	display: flex;
+	flex-basis: 300px;
 	justify-content: center;
 	flex-flow: row wrap;
 	align-items: center;
@@ -89,6 +91,7 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	flex-flow: row wrap;
+	flex-bais: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -101,7 +104,7 @@ header nav ul li a{
 	float: left;
 }
 .main-image img {
-	width: 100%;
+	flex-basis: 300px;
 	border-bottom: 3px solid #77a466;
 }
 
