@@ -46,7 +46,7 @@ p {
 /*The widths are in a percentage!*/
 header {
 	display: flex;
-	flex-basis: 100%;
+	flex-basis: 90%;
 	justify-content: center;
 	flex-flow: row wrap;
 	align-items: center;
@@ -58,6 +58,7 @@ header {
 
 header h1 span {
 	color: #77a466;
+	display: flex;
 }
 
 /*ommitted header nav{ float right padding 46px 0} and header nav ul {margin 0 padding 0}*/
