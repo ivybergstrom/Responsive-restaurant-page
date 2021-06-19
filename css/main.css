@@ -3,7 +3,6 @@ html{
 	font-size: 16px;
 }
 body {
-	flex-basis: 90%;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display: flex;
 	justify-content: center;
@@ -15,6 +14,7 @@ body {
 .container{
 	display: flex;
 	flex-basis: 90%;
+	flex-shrink: 10;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
@@ -41,45 +41,35 @@ h3 {
 
 p {
 	font-size: 14px;
-	line-height: 21px;
-    padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
 header {
 	display: flex;
-	flex-basis: 90%;
+	flex-basis: 100%;
 	justify-content: center;
 	flex-flow: row wrap;
 	align-items: center;
-	height: 110px;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
 }
 
-header h1 {
-	float: left;
-	margin: 0;
-	padding: 38px 0;
-}
+/*ommited from this section: header h1 float left, margin 0, padding 38px 0*/
+
+
 header h1 span {
 	color: #77a466;
 }
 
-header nav {
-	float: right;
-	padding: 46px 0;
-}
-header nav ul {
-	margin: 0;
-	padding: 0;
-}
+/*ommitted header nav{ float right padding 46px 0} and header nav ul {margin 0 padding 0}*/
+
+/*omitted display inline from header nav ul li*/
 header nav ul li {
+	display: flex;
+	flex-basis: 90%;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
+	padding: 0 10px
 }
 header nav ul li a{
 	text-decoration: none;
@@ -87,6 +77,9 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
+
+/*omitted clear: both and margin: 0 auto from .top-section, .bottom-section*/
+
 .top-section,
 .bottom-section {
 	flex-flow: row wrap;
@@ -94,22 +87,21 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;
-	clear: both;
 }
+/*omitted float: left from .main-image*/
+
 
 .main-image {
-	flex-basis: 90%;
 	height: auto;
-	float: left;
 }
 .main-image img {
 	border-bottom: 3px solid #77a466;
+	width: 100%;
 }
+/*omitted float: left from .main-title*/
 
 .main-title {
 	height: auto;
-	float: left;
 }
 .main-title h2 {
 	text-align: left;
@@ -121,13 +113,12 @@ header nav ul li a{
 	font-size: 16px;
 	line-height: 25px;
 }
-
+/*omitted float: left from .section-one through 3*/
 .section-one,
 .section-two,
 .section-three {
-	width: 30%;
+	width: 100%;
 	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
 }
 
@@ -166,6 +157,7 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
+/* omitted from footer: margin: 0 auto; clear: both;*/
 footer {
 	display: flex;
 	flex-flow: row wrap;
@@ -174,8 +166,6 @@ footer {
 	align-items: center;
 	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
 	text-align: center;
 }
 footer span {
