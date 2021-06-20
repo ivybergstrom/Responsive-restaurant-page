@@ -54,27 +54,38 @@ header {
 }
 
 /*ommited from this section: header h1 float left, margin 0, padding 38px 0*/
-
+header h1{
+	display: flex;
+	border-bottom: 3px solid #77a466;
+}
 
 header h1 span {
 	color: #77a466;
-	display: flex;
+	margin-right: 10px;
 }
 
-/*ommitted header nav{ float right padding 46px 0} and header nav ul {margin 0 padding 0}*/
 
-/*omitted display inline from header nav ul li*/
+header nav{
+	align-content: space-around;
+	flex-basis: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 header nav ul li {
 	display: flex;
-	flex-basis: 90%;
+	align-items: center;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
-	padding: 0 10px
+	padding: 0, 0, 0, 0;
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	line-height: 2;
+	padding: 0, 0, 0, 0;
 }
 
 /*The widths are in a percentage!*/
@@ -165,7 +176,6 @@ footer {
 	flex-basis: 90%;
 	justify-content: center;
 	align-items: center;
-	height: 50px;
 	border-top: 3px solid #eee;
 	text-align: center;
 }
@@ -175,3 +185,16 @@ footer span {
 	color: #77a466;
 	font-size: 14px;
 }
+
+/*for tablets*/
+@media (min-width: 768px){
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		border-top: 1px solid #eee;
+	}
+}
+
+/*for dekstops*/
