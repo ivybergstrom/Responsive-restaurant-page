@@ -252,7 +252,7 @@ footer span {
 	.section-two,
 	.section-three {
 		width: 33%;
-		height: 205px;
+		align-self: flex-start;
 		border-top: 1px solid #eee;
 	}
 
