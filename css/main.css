@@ -198,3 +198,79 @@ footer span {
 }
 
 /*for dekstops*/
+/*for dekstops*/
+@media (min-width: 1200px){
+	header {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	/*ommited from this section: header h1 float left, margin 0, padding 38px 0*/
+	header h1{
+		display: flex;
+		flex-basis: 50%;
+		border-bottom: none;
+	}
+
+	header h1 span {
+		color: #77a466;
+		margin-right: 10px;
+	}
+	header nav{
+		display: flex;
+		flex-basis: 50%;
+		justify-content: flex-end;
+	}
+
+	header nav ul{
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis:100%;
+		justify-content: space-between;
+	}
+
+
+	header nav ul li {
+		display: flex;
+		flex-direction: row;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 14px;
+	}
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+		line-height: 2;
+	}
+
+	.top-section, .bottom-section{
+		clear: both;
+		margin: 0 auto;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		align-self: flex-start;
+		border-top: 1px solid #eee;
+	}
+
+	.section-one h3 {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.section-two h3,
+	.section-three h3 {
+		display: flex;
+		justify-content: center;
+		padding: 10px 30px;
+	}
+}
